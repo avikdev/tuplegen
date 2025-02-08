@@ -1,0 +1,39 @@
+{
+  "name": "tuple-gen",
+  "description": "Various set theoretic utilities to generate tuple sequences",
+  "author": {
+    "name": "Avik Paul",
+    "email": "avikpauldev@gmail.com",
+    "url": "http://github.com/avikdev"
+  },
+  "keywords": [
+    "cartesian",
+    "power set",
+    "permutation",
+    "combination"
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run --root .",
+    "coverage": "vitest run --coverage",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avikdev/tuple-gen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avikdev/tuple-gen/issues"
+  },
+  "homepage": "https://github.com/avikdev/tuple-gen#readme",
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "vite": "^6.1.0",
+    "vitest": "^3.0.5"
+  }
+}
