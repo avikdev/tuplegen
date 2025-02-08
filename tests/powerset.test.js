@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { PowerSetGen } from "@/powerset";
+const { PowerSetGen } = require("../lib/powerset");
 
 describe("edge cases", () => {
   it("empty array", () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { CartesianGen } from "@/cartesian";
+const { CartesianGen } = require("../lib/cartesian");
 
 describe("edge cases", () => {
   it("empty input", () => {
