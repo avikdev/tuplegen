@@ -1,5 +1,5 @@
 {
-  "name": "tuple-gen",
+  "name": "tuplegen",
   "description": "Various set theoretic utilities to generate tuple sequences",
   "author": {
     "name": "Avik Paul",
@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/avikdev/tuple-gen.git"
+    "url": "git+https://github.com/avikdev/tuplegen.git"
   },
   "bugs": {
-    "url": "https://github.com/avikdev/tuple-gen/issues"
+    "url": "https://github.com/avikdev/tuplegen/issues"
   },
-  "homepage": "https://github.com/avikdev/tuple-gen#readme",
+  "homepage": "https://github.com/avikdev/tuplegen#readme",
   "devDependencies": {
     "prettier": "^3.4.2",
     "vite": "^6.1.0",

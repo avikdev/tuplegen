@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: ["./index.js"],
-      fileName: (format, entryName) => `my-lib-${entryName}.${format}.js`,
+      fileName: (format, entryName) => `tuplegen-${entryName}.${format}.js`,
     },
   },
   resolve: {
