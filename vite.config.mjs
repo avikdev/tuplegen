@@ -5,7 +5,7 @@ export default defineConfig({
   root: ".",
   build: {
     lib: {
-      entry: ["./index.js"],
+      entry: ["./src/index.js"],
       fileName: (format, entryName) => `tuplegen-${entryName}.${format}.js`,
     },
   }
