@@ -1,3 +1,8 @@
 # tuple-gen
 
-Various set theoretic utilities to generate tuple sequences (for e.g. product set, power set, permutation, combination)
+A collection of set operation utility in JavaScript, namely:
+
+- Cartesian Product
+- Power Set
+- Permutation
+- Combination
