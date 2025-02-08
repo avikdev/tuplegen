@@ -1,4 +1,4 @@
-import { CartesianGen } from "@/cartesian";
+import { CartesianGen } from "./cartesian";
 
 /**
  * Given an array of sets, returns a generator that emits the elements of the power set.

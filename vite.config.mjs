@@ -8,10 +8,5 @@ export default defineConfig({
       entry: ["./index.js"],
       fileName: (format, entryName) => `tuplegen-${entryName}.${format}.js`,
     },
-  },
-  resolve: {
-    alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
-    },
-  },
+  }
 });
