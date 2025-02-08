@@ -106,7 +106,7 @@ describe("simulate decimal numbers", () => {
       index = 0;
     const included = [];
     const lookupSet = new Set(indices);
-    while ((tuple = gen()) != null) {
+    while ((tuple = gen()) !== null) {
       if (lookupSet.has(index)) {
         included.push(tuple.join(""));
       }

@@ -1,3 +1,4 @@
-import { CartesianGen } from "./src/cartesian";
+import { CartesianGen } from "@/cartesian";
+import { PowerSetGen } from "@/powerset";
 
-export { CartesianGen };
+export { CartesianGen, PowerSetGen };

@@ -7,5 +7,5 @@ export default mergeConfig(
     test: {
       include: ["tests/**/*.{test,spec}.?(c|m)[jt]s"],
     },
-  }),
+  })
 );

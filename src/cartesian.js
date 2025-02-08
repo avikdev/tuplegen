@@ -5,7 +5,7 @@
  * size, and data types.
  * The method returns a generator function (stateful) which can be called repeatedly to
  * produce the next tuple from the product set. After it reaches the end of iteration
- * it will return null on sebsequent calls.
+ * it will return null upon sebsequent calls.
  *
  * Example usage:
  *

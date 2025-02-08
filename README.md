@@ -1,4 +1,4 @@
-# tuple-gen
+# tuplegen
 
 A collection of set operation utility in JavaScript, namely:
 
