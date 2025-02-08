@@ -13,9 +13,16 @@
     "combination"
   ],
   "license": "MIT",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "type": "module",
-  "main": "src/index.js",
+  "main": "./dist/tuplegen-index.umd.js",
+  "module": "./dist/tuplegen-index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/tuplegen-index.es.js",
+      "require": "./dist/tuplegen-index.umd.js"
+    }
+  },
   "scripts": {
     "build": "vite build",
     "preview": "vite preview",

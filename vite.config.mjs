@@ -1,12 +1,15 @@
 import { defineConfig } from "vite";
-import { fileURLToPath, URL } from "url";
+
+
+const packageName = "tuplegen";
 
 export default defineConfig({
   root: ".",
   build: {
     lib: {
+      name: packageName,
       entry: ["./src/index.js"],
-      fileName: (format, entryName) => `tuplegen-${entryName}.${format}.js`,
+      fileName: (format, entryName) => `${packageName}-${entryName}.${format}.js`,
     },
   }
 });
