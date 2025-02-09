@@ -7,7 +7,7 @@ A collection of JavaScript utility methods to generate combinatorial tuples, nam
 - [Permutation](https://en.wikipedia.org/wiki/Permutation)
 - [Combination](https://en.wikipedia.org/wiki/Combination)
 
-These methods does not exhaustively precompute the entire collection, (i.e. all tuples of the product set or all permutations), rather they incrementally the compute the next tuple to return. After all possible tuples are turned they return null.
+These methods do not exhaustively precompute the entire collection, (i.e. all tuples of the product set or all permutations), rather they incrementally compute the next tuple to be returned when the function object is invoked. After all possible tuples have been turned the function object returns null.
 
 A typical use case would be:
 
