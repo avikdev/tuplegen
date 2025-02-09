@@ -5,15 +5,26 @@ describe("edge cases", () => {
   it("empty input", () => {
     const gen = CartesianGen([]);
     expect(gen()).toStrictEqual([]);
+    expect(gen()).toStrictEqual(null);
   });
 
-  it("one empty set", () => {
+  it("sole empty set", () => {
     const gen = CartesianGen([[]]);
     expect(gen()).toStrictEqual(null);
   });
 
+  it("one empty set", () => {
+    const gen = CartesianGen([["p", "q", "r"], []]);
+    expect(gen()).toStrictEqual(null);
+  });
+
+  it("only empty sets", () => {
+    const gen = CartesianGen([[], [], []]);
+    expect(gen()).toStrictEqual(null);
+  });
+
   it("multiple empty sets", () => {
-    const gen = CartesianGen([[]]);
+    const gen = CartesianGen([[], ["a", "b"], []]);
     expect(gen()).toStrictEqual(null);
   });
 
@@ -49,7 +60,7 @@ describe("sets of numbers", () => {
     expect(gen()).toStrictEqual(null);
   });
 
-  it("two varying sets", () => {
+  it("three varying sets", () => {
     const gen = CartesianGen([
       [1, 2],
       [4, 5],
@@ -67,7 +78,7 @@ describe("sets of numbers", () => {
   });
 });
 
-describe("simulate power sets", () => {
+describe("simulate binary numbers", () => {
   it("two booleans", () => {
     const bools = [false, true];
     const gen = CartesianGen([bools, bools]);
@@ -95,17 +106,17 @@ describe("simulate power sets", () => {
 
 describe("simulate decimal numbers", () => {
   // Suppose D is the set of decimal digits. Then (D x D x D) will generate the set of all 3-digit
-  // numbers in the increasing order.
+  // decimal numbers in the increasing order.
   const decimalDigits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
   // The output sequence having 1000 members is too large to test exhaustively. So we use the following
   // utility which takes a generator and filters for only the members at the selected indices.
   // And further returns the member tuples as strings (concated tuple elements) for compact representation.
-  const filterAndToString = (gen, indices) => {
+  const filterAndToString = (gen, allowndices) => {
     let tuple,
       index = 0;
     const included = [];
-    const lookupSet = new Set(indices);
+    const lookupSet = new Set(allowndices);
     while ((tuple = gen()) !== null) {
       if (lookupSet.has(index)) {
         included.push(tuple.join(""));

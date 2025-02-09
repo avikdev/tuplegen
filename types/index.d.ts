@@ -1,6 +1,6 @@
 declare module "tuplegen" {
-  type Generator = () => any[];
-  export function CartesianGen(sets: any[][]): Generator;
-  export function PermutationGen(elements: any[]): Generator;
-  export function PowerSetGen(elements: any[]): Generator;
+  type GeneratorFn = () => any[];
+  export function CartesianGen(sets: any[][]): GeneratorFn;
+  export function PermutationGen(elements: any[]): GeneratorFn;
+  export function PowerSetGen(elements: any[]): GeneratorFn;
 }
