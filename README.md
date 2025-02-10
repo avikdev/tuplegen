@@ -9,7 +9,7 @@ A collection of JavaScript utility methods to generate combinatorial tuples, nam
 
 These methods do not exhaustively precompute the entire collection, (i.e. all tuples of the product set or all permutations), rather they incrementally compute the next tuple to be returned when the function object is invoked. After all possible tuples have been turned the function object returns null.
 
-A typical use case would be:
+An example use case for generating combinations of 2 from an array of 3:
 
 ```
 const generator = CombinationGen(['A', 'B', 'C'], 2);
@@ -19,10 +19,12 @@ while ((tuple = generator()) !== null) {
 }
 ```
 
-This will produce the following tuples:
+This will produce the 2-tuples (a.k.a. pairs) selected from the input srray:
 
 ```
 [A, B]
 [A, C]
 [B, C]
 ```
+
+The other API methods have a similar syntax. Please refer to individual source files for the function signatures, and the test files for more examples.
